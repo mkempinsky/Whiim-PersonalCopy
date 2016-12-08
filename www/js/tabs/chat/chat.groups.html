@@ -1,0 +1,49 @@
+<ion-view title="Create Activity" id="chat-groups-page" onload="initiateChat()">
+    <ion-content class="manual-ios-statusbar-padding">
+    	<div class="heading-backsplash-chats">
+            <div class="profileHeader">
+                <p class="defaultHeader-pTag"><label class="defaultHeaderTitle">WHiiM</label>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="card groups-card">
+                <h1 id="myGroupsTitle">My Groups</h1>
+                <td-cards>
+                    <td-card ng-repeat="c in chatCtrl.chatrooms" class="notificationCard list card chatGroups">
+                        <div class="list">
+                        <a ng-click="modal.show(); openChat(c)" class="item item-icon-left">
+                            <i  class="icon chat-icons ion-ios-chatboxes" ng-class="{'new-message': c.hasNewChatEntry}"></i>
+                            <p> {{c.title}} </p>
+                          </a>
+                        
+                        </div>
+                        
+                        <!-- <pre>{{ c.hasNewChatEntry | json}}</pre> -->
+
+                    </td-card>
+                </td-cards>
+            </div>
+        </div>
+        <!-- <div class="card chats-card">
+            
+             <p>{{chat.title}}</p> -->
+            
+            <!-- div ng-repeat="c in chatCtrl.chatrooms" class="chatGroups">
+            <div class="list">
+        		<a ng-click="modal.show(); openChat(c)" class="item item-icon-left">
+        		    <i  class="icon chat-icons ion-ios-chatboxes" ng-class="{'new-message': c.hasNewChatEntry}"></i>
+        		    <p>{{c.title}}</p>
+        		  </a>
+                
+        		</div>
+                
+             <pre>{{ c.hasNewChatEntry | json}}</pre> -->
+
+    		<!-- </div>
+        </div> -->
+
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+
+<ion-view title="Notifications" hide-nav-bar="true" id="notificationsPage">
+        <!-- <ion-list ng-repeat="note in notifications" id="notifications-list7">
+           
+        </ion-list> -->
+        <ion-content class="manual-ios-statusbar-padding">
+        <div class="heading-backsplash-custom-notifications">
+	        <div class="profileHeader">
+	            <p class="defaultHeader-pTag"><label class="defaultHeaderTitle">WHiiM</label>
+	            </p>
+	        </div>
+    	</div>
+		<!-- <div class="top-notification-div">
+			<label class="notification-list-title">Notifications</label>
+		</div> -->
+    	<div class="notifications-list">
+	        <td-cards>
+	        	<td-card ng-repeat="note in notifs.notifications" class="notificationCard list card">
+     
+
+	        		<div class="notifications-div">
+	        			<div id="declineCardIcon">
+						<i class="ion-close-circled" ng-click="notifs.remove($index)"></i>
+						</div>
+						<img id="profile-photo" ng-src="{{note.photoURL}}"
+						ng-click="popover.show($event); setRequestingId(note.$id)">
+						<i id="acceptCardIcon" class="ion-checkmark-circled" ng-click="notifs.add(note, $index)"></i>
+					</div>
+					<div class="notifications-div">
+		                <p><a class="notificationCard-userName">{{note.ownerName}}</a><br/><p id="notificationsTitle">      {{note.prefix}}{{note.title}}!</p></p>
+		            </div>
+
+		        </td-card>
+	        </td-cards>
+        </div>
+    </ion-content>
+</ion-view>

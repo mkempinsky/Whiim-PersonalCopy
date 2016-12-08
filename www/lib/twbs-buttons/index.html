@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;twbs-buttons&gt;</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <!-- Importing Web Component's Polyfill -->
+  <script src="bower_components/platform/platform.js"></script>
+
+  <!-- Importing Custom Elements -->
+  <link rel="import" href="src/twbs-button.html">
+
+  <style>
+    body {
+      margin:0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    header {
+      background: #2ecc71;
+      padding: 50px 0;
+      color: #ffffff;
+    }
+    .content {
+      width: 80%;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 45px;
+      font-weight: 300;
+      margin: 0;
+      padding: 0; }
+    h2 {
+      font-weight: 300;
+    }
+    p {
+      font: normal 14px/23px 'Roboto', sans-serif;
+    }
+    a {
+      color: #4183c4;
+      text-decoration: none;
+    }
+    pre {
+      padding: 10px;
+      display: block;
+      background: #ecf0f1;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+    bs-col {
+      text-align: center;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid rgba(86,61,124,.2);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    bs-row {
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #ecf0f1;
+      padding: 15px ;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://github.com/mvaldetaro/twbs-buttons">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+  </a>
+  <header>
+    <div class="content">
+      <h1>&lt;twbs-buttons&gt;</h1>
+    </div>
+  </header>
+  <div class="content">
+    <!-- Using Custom Elements -->
+    <h2>Button types</h2>
+    <p><twbs-button tag="a">a Tag</twbs-button>
+    <twbs-button tag="input" value="input type=submit Tag"></twbs-button>
+    <twbs-button tag="input" type="button" value="input type=button Tag"></twbs-button>
+    <twbs-button tag="button"> button Tag </twbs-button></p>
+
+    <pre>
+      &lt;twbs-button tag="a"&gt; a Tag &lt;/twbs-button&gt;
+      &lt;twbs-button tag="input" value="input type=submit Tag"&gt; &lt;/twbs-button&gt;
+      &lt;twbs-button tag="input" type="button" value="input type=button Tag"&gt; &lt;/twbs-button&gt;
+      &lt;twbs-button tag="button"&gt; button Tag &lt;/twbs-button&gt;
+    </pre>
+
+    <h2>Styles</h2>
+    <p>Use any of the available button attributes to quickly create a styled button.</p>
+    <p>
+      <twbs-button style="default"> style="default" </twbs-button>
+      <twbs-button style="primary"> style="primary" </twbs-button>
+      <twbs-button style="success"> style="success" </twbs-button>
+      <twbs-button style="info"> style="info" </twbs-button>
+      <twbs-button style="warning"> style="warning" </twbs-button>
+      <twbs-button style="danger"> style="danger" </twbs-button>
+      <twbs-button style="link"> style="link" </twbs-button>
+    </p>
+
+    <h2>Styles</h2>
+    <p>Use any of the available button attributes to quickly create a styled button.</p>
+    <p>
+      <twbs-button style="default"> style="default" </twbs-button>
+      <twbs-button style="primary"> style="primary" </twbs-button>
+      <twbs-button style="success"> style="success" </twbs-button>
+      <twbs-button style="info"> style="info" </twbs-button>
+      <twbs-button style="warning"> style="warning" </twbs-button>
+      <twbs-button style="danger"> style="danger" </twbs-button>
+      <twbs-button style="link"> style="link" </twbs-button>
+    </p>
+
+    <h2>Sizes</h2>
+    <p>Add size="lg", size="sm", or size="xs" for additional sizes.</p>
+      <p>
+        <twbs-button style="primary" size="lg"> size="lg" </twbs-button>
+        <twbs-button style="primary"> default </twbs-button>
+        <twbs-button style="primary" size="sm"> size="sm" </twbs-button>
+        <twbs-button style="primary" size="xs"> size="xs" </twbs-button>
+      </p>
+
+    <h2>Block</h2>
+    <p>Create block level buttons—those that span the full width of a parent—by adding block="block"</p>
+    <p>
+      <twbs-button style="primary" size="lg" block="block"> style="primary" size="lg" block="block" </twbs-button>
+      <twbs-button block="block"> default block="block" </twbs-button>
+    </p>
+
+    <h2>State</h2>
+    <p>Create block level buttons—those that span the full width of a parent—by adding block="block"</p>
+    <p>
+      <twbs-button style="primary" size="lg" block="block" state="active"> state="active" </twbs-button>
+      <twbs-button style="primary" size="lg" block="block" state="disabled"> state="disabled" </twbs-button>
+    </p>
+  </div>
+  <footer>
+    <div class="content">
+      <a href="http://mvaldetaro.mit-license.org/">MIT License</a> (http://mvaldetaro.mit-license.org/) © Magno Valdetaro
+    </div>
+  </footer>
+</body>
+</html>

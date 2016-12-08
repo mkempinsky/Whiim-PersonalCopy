@@ -1,0 +1,53 @@
+
+<ion-modal-view title="Chat Feed" id="page11" has-subheader>
+    <div class="defaultHeader bar bar-header">
+        <p class="roomTitle">{{roomTitle}}</p>
+        <i class="close-chat-btn ion-close" ng-click="modal.hide()"></i>
+    </div>
+
+    <ion-content>
+        <div class="message-top-spacer"></div>
+        <div class="messages-content">
+
+            
+            <div ng-repeat="m in messages">  
+
+                <div class="single-message">
+                    <img class="profile-photo-message" ng-class="{'myPhoto' : uid === m.sentByID}" ng-src="{{m.photoURL}}"/>
+                    <div class="p-message" ng-class="{'myMessage':  uid === m.sentByID}">
+                    {{m.message}}
+                    </div>
+                </div>
+                <div class="p-sentBy" ng-class="{'myName' : uid === m.sentByID}">{{m.sentBy}}</div>
+
+            </div>
+            
+            <div class="button-bar">
+              <a class="button button-positive button-small" ng-click="changeNumberDisplayed(5)" ng-show="totalMessageCount > 6">More</a>
+              <a class="button button-royal button-small" ng-click="changeNumberDisplayed(-5)" ng-show="numberMessagesToShow > 5">Less</a>
+              
+            </div>
+          
+        </div>
+        <div class="message-bottom">
+        </div>
+    </ion-content>
+    <form>
+    <div class="bar bar-footer message-footer">
+        <div class="item item-input-inset">
+
+                <label class="item-input-wrapper">
+                    <input class="message-textbox" wrap="hard" type="text" ng-model="newMessage" placeholder="Type in your message...">
+                   
+                </label>
+                
+                <button type="submit" ng-click="sendMessage(newMessage); newMessage = '' " class="button button-small send-msg-btn">
+                    Send
+                </button>
+                
+        </div>
+    </div>
+    </form>
+</ion-modal-view>
+ 
+    

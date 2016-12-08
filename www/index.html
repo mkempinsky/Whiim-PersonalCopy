@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link rel="manifest" href="manifest.json">
+    <!--    un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script> -->
+    
+    <!-- CSS INJECTIONS -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/angular-toastr/dist/angular-toastr.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="lib/ionic-ion-tinder-cards/ionic.tdcards.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <!-- GeoFire -->
+    <script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script>
+    <!-- IONIC / ANGULAR JS -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <!-- CORDOVA SCRIPT (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- FIREBASE INJECTIONS -->
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/angularfire/dist/angularfire.js"></script>
+    <script src="lib/filepicker-js/filepicker.js"></script>
+    <script src="lib/angular-filepicker/dist/angular_filepicker.js"></script>
+    <script src="lib/geofire/dist/geofire.min.js"></script>
+   <!-- tinder cards -->
+    <script src="lib/ionic-ion-tinder-cards/ionic.tdcards.js"></script>
+    <script src="lib/collide/collide.js"></script>
+    <!-- Session and localstorage -->
+    <script src="lib/ngstorage/ngStorage.js"></script>
+    <!-- JS INJECTIONS -->
+    <script src="js/app.js"></script>
+    <script src="js/firebase.module.js"></script>
+    <script src="js/core/filestack.api.js"></script>
+   
+    <script src="js/core/geolocator.factory.js"></script>   
+    <script src="js/core/facebook.factory.js"></script>
+    <script src="js/core/firebase.factory.js"></script>
+    <script src="js/core/filter.js"></script>
+    <script src="js/core/color.factory.js"></script>
+    <script src="js/login/defaultLogin.controller.js"></script>
+    <script src="js/tabs/create/create.controller.js"></script>
+    <script src="js/tabs/dashboard/dashboard.controller.js"></script>
+    <script src="js/tabs/notifications/notifications.controller.js"></script>
+    <script src="js/tabs/profile/profile.controller.js"></script>
+    <script src="js/tabs/chat/chat.controller.js"></script>
+
+    <script src="lib/sweetalert/dist/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="lib/sweetalert/dist/sweetalert.css">
+    
+</head>
+
+<body>
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>

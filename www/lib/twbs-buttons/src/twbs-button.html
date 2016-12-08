@@ -1,0 +1,93 @@
+<!-- Import Polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- Define "container" custom element -->
+<polymer-element name="twbs-button" attributes="href tag type value style size block state disable bgcolor bdcolor txtcolor">
+
+  <template id="buttons">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tag "<a>" -->
+    <template id="a" if="{{tag == 'a'}}">
+      <a href="{{href}}" class="btn" >
+        <content></content>
+      </a>
+    </template>
+
+    <template id="input" if="{{tag =='input'}}">
+
+      <!-- Tag "<input>" -->
+      <template id="submit" if="{{type =='submit'}}">
+        <input class="btn" type="submit" value="{{value}}" />
+      </template>
+
+      <template id="button" if="{{type == 'button'}}">
+        <input class="btn" type="button" value="{{value}}">
+      </template>
+
+    </template>
+
+    <!-- Tag "<button>" -->
+    <template id="button" if="{{tag == 'button'}}">
+      <button class="btn">
+        <content></content>
+      </button>
+    </template>
+
+  </template>
+
+  <script>
+    //var button = document.querySelector("twbs-button");
+    //var style = button.getAttribute("style");
+    Polymer('twbs-button', {
+      ready: function() {
+        var btn = this.shadowRoot.querySelector(".btn");
+
+        //Attribute style
+        var style = this.getAttribute("style");
+        if (!style) {
+          btn.classList.add("btn-default");
+        } else {
+          btn.classList.add("btn-"+style);
+        }
+
+        //Attribute size
+        var size = this.getAttribute("size");
+        if (size) {
+          btn.classList.add("btn-"+size);
+        }
+
+        //Attribute block
+        var block = this.getAttribute("block");
+        if (block) {
+          btn.classList.add("btn-block");
+        }
+
+        //Attribute disabled
+        var state = this.getAttribute("state");
+        if (!state) {
+          // nothing
+        } else if (state == "disabled") {
+          btn.setAttribute("disabled","disabled");
+        } else if (state == "active") {
+          btn.setAttribute("active","active");
+        } else {
+          // nothing
+        }
+
+      },
+      href    : "#",
+      tag     : "button",
+      type    : "submit",
+      value   : " Hello!",
+      size    : '',
+      block   : '',
+      state   : '',
+      bgcolor : "#ebebeb",
+      bdcolor : "#adadad",
+      txtcolor: "#333333",
+    });
+  </script>
+
+</polymer-element>

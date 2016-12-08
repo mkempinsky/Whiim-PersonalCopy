@@ -1,0 +1,71 @@
+<ion-view title="Create Activity" hide-nav-bar="true" id="createPage">
+
+        <div class="heading-backsplash-custom">
+            <div class="profileHeader">
+                <p class="defaultHeader-pTag"><label class="defaultHeaderTitle">WHiiM</label>
+                </p>
+            </div>
+        </div>
+        <div class="top-select-div">   
+            <i id="anchorIcon-setEvent" class="fa fa-anchor" ng-click="popover.show($event)" ng-model="newEvent.category"></i>
+            <label class="activityFeedList">{{newEvent.category}}</label>
+        </div>
+    
+      
+    <div class="card create-card">
+        <form>
+            <!-- Where user inputs event name -->
+            <div class="row">
+                <label class="create-label">Event Name:</label>
+            </div>
+            <div class="row">
+                <textarea id="create-event-name" class="row createInput" type="text" placeholder="" maxlength="35" ng-model="newEvent.name"></textarea>
+            </div>
+
+            <!-- Where user inputs Description -->
+            <div class="row">
+                <label class="create-label">Description:</label>
+            </div>
+            <div class="row">
+
+                <textarea id="create-event-description" class="row createInput" type="text" placeholder="" maxlength="150" ng-model="newEvent.description"></textarea>
+
+            </div>
+            
+            <!-- Where user inputs # of people they want to join -->
+                <div class="row">
+                    <label class="create-label">How many people would you like to join you?
+                    </label>
+                    
+                </div>
+                
+                    <div class="row">
+                        <div class="row range">
+                            <i class="icon ion-ios-person"></i>
+
+                                <input type="range" value="0" min="1" max="10" step="1" ng-model="newEvent.requiredUsers"/>
+
+                            <i class="icon ion-ios-people"></i>
+                        </div>
+                    </div>
+   
+
+
+            <!-- <ion-item>
+                <ion-range min="1" max="10" step="1" ngModel="newEvent.requiredUsers">
+                <ion-icon small range-left name="sunny"></ion-icon>
+                <ion-icon range-right name="sunny"></ion-icon>
+                </ion-range>
+            </ion-item> -->
+
+
+            <div class="ppl-output">
+                <p id="ppl-output-name">{{newEvent.requiredUsers}}<i id="ppl-output-icon" class="ion-person-stalker"></i></p>
+            </div>
+            <div class="row">
+                <button class="button post-event-btn" ng-click="create.createEvent(create.newEvent)"><p id="post-event-label">Post Event<i class="cust-icon ion-paper-airplane"></i></p></button>
+            </div>
+        </form>
+    </div> <!-- closing card div -->
+ 
+</ion-view>

@@ -1,0 +1,1298 @@
+/***************************************************
+                Universal Styling
+***************************************************/
+
+.platform-ios .manual-ios-statusbar-padding {
+        padding-top: 20px;
+    }
+    
+    .manual-remove-top-padding {
+        padding-top: 0px;
+    }
+    
+    .manual-remove-top-padding .scroll {
+        padding-top: 0px !important;
+    }
+    
+    ion-list.manual-list-fullwidth div.list,
+    .list.card.manual-card-fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    ion-list.manual-list-fullwidth div.list > .item,
+    .list.card.manual-card-fullwidth > .item {
+        border-radius: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+.backspash-title {
+    margin-top: -9%;
+    
+}
+
+/***************************************************
+                Default Header Bar
+***************************************************/
+.profileHeader{
+   background-color: rgba(255, 255, 255, .0);
+}
+.heading-backsplash-chats,
+.heading-backsplash-profile,
+.heading-backsplash-custom-notifications,
+.heading-backsplash-custom{
+   background: #50C9C3 ; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(left top, #50C9C3 , #96DEDA ); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(bottom right, #50C9C3 , #96DEDA ); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(bottom right, #50C9C3 , #96DEDA ); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to bottom right, #50C9C3 , #96DEDA ); /* Standard syntax */
+    height: 12em;
+    margin-bottom: -25%;
+}
+.heading-backsplash-custom-notifications {
+    margin-bottom: -17% !important;
+}
+.heading-backsplash-profile {
+    margin-bottom: -2% !important;
+}
+.heading-backsplash-chats {
+    margin-bottom: -13% !important;
+}
+.bar.bar-positive {
+    background-color: #A9A9A9;
+    height: 3.5em;
+    border-color: #A9A9A9;
+    background-image: none;
+}
+.defaultHeader {
+    background: linear-gradient(to left, #50C9C3 , #96DEDA);
+    width: 100%;
+    height: 10%;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+.defaultHeader-pTag {
+    padding-top: 4%;
+    text-align: center;
+}
+
+.messagesHeaderBtn {
+    color: #fff;
+    float: right;
+    font-size: 1.2em;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.defaultHeaderTitle-dash,
+.defaultHeaderTitle {
+    text-align: center;
+    color: #fff;
+    font-size: 2.4em;
+    font-family: 'raleway', sans-serif;
+}
+
+.defaultHeaderTitle-dash {
+    margin-left: -13% !important;
+    padding-left: 0 !important;
+}
+
+.platform-ios .manual-ios-statusbar-padding {
+    padding-top: 0;
+}
+
+/***************************************************
+             Default Tabs Controller
+***************************************************/
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {    
+    opacity: 1;
+    color: #E63946;
+    box-shadow: 0 .3em .8em #50514f;
+}
+.tab-item {
+    color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    opacity: 1.0;
+    display: block;
+    overflow: hidden;
+    max-width: 150px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+.tab-item .icon {
+    margin-top: 8%;
+}
+.tabs-stable tabs-icon-top {
+    padding-top: 2%;
+}
+.tabs-stable > .tabs, .tabs.tabs-stable {
+    background-color: #a6a7a5;
+}
+.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive {
+    background-color: #ff3b3f;
+    color: #fff;
+}
+/***************************************************
+                Default Login Html
+***************************************************/
+#defaultLoginColor {
+  width: 100%;
+  height: 100%;
+  background: url('../img/hiking wallpaper.jpg') center center no-repeat;
+  background-size: cover;
+}
+#defaultLoginImg {
+    width: 90%; 
+    height: 90%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 18%;
+    margin-bottom: 10%;
+}
+.facebook-login-btn,
+.defaultLoginPageBtn{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    border: 2px solid #fff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+    border-radius: 1em;
+}
+.facebook-login-btn {
+    background: linear-gradient(to bottom right, #627aac , #3B5998 ); /* Standard syntax */
+    color: #fff;
+}
+.defaultLoginPageBtn {
+    color: #fff;
+}
+.loginIcon {
+    float: right;
+    padding-right: 4%;
+    font-size: 1.6em;
+    /* margin-bottom: 4%; */
+    margin-top: -2%;
+}
+ion-popover-view .list {
+    text-align: center;
+}
+/***************************************************
+                Dashboard Html
+***************************************************/
+#popover-settings-icon {
+    float: left;
+    color: #fff;
+    margin-left: 5%;
+    font-size: 2.5em;
+    margin-top: 2%;
+}
+
+#anchorIcon-setEvent,
+#anchorIconSelector {
+    font-size: 2em;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 90%;
+    padding: 3%;
+    margin-top: -3%;
+    background: linear-gradient(to left, #000000 , #434343);
+    position: relative;
+}
+.spinner svg {
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-top: 50%;
+    stroke: #EB3349;
+    fill: #EB3349;
+}
+.swipeCard {
+    margin-top: 3%;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-shadow: 0 6px 6px #b3b3b3;
+    background-color: none;
+    border-radius: 3%;
+    z-index: 10000;
+}
+
+.swipeCard-img-details {
+   /* width: 94%;*/
+    /*margin-left: 3%;
+    margin-right: 3%;*/
+    height: inherit;
+    border-radius: 5%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    position: relative;
+    z-index: -1;
+    max-height: 18em !important;
+    min-height: 18em !important;
+    min-width: 75% !important;
+    max-width: 94% !important;
+}
+
+.center-img-details {
+    text-align: center;
+}
+
+.swipeCard-img {
+    width: 78%;
+    margin-left: 11%;
+    margin-right: 11%;
+    height: inherit;
+    border-radius: 90%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    position: relative;
+    z-index: -1;
+    max-height: 19em !important;
+    min-height: 19em !important;
+}
+.swipeCardP-Tag {
+    font-size: 1.5em;
+}
+/*.button {
+    border-radius: 0px !important;
+}*/
+
+
+
+#activityFeedBtn {
+    width: 94%;
+    background: linear-gradient(to left, #485563 , #29323c);
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px #ccc;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+.notification-list-title {
+    background: transparent;
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 5%;
+    border: 4px solid #fff;
+    /* border-right-width: 3px; */
+    font-weight: 500;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    margin-top: -3%;
+    border-radius: 1em;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.activityFeedList {
+    background: transparent;
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 9%;
+    border-right: 4px solid #fff;
+    /* border-right-width: 3px; */
+    font-weight: 500;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    /* padding-bottom: 1.5%; */
+    /* padding-top: 1.5%; */
+    padding-left: 11%;
+    margin-left: -5%;
+    margin-bottom: 2%;
+    margin-top: -3%;
+    border-radius: 1em;
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+#activityListCard {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+#activityListCard p {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+#activityListCard-People {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff3b3f;
+    text-align: center;
+    margin-bottom: 4%;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+#activityListCard-PeopleIcon {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff3b3f;
+    padding-left: 1%;
+}
+
+#activityListCard2 {
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+#seeUserDesc {
+    float: right;
+    /* text-align: center; */
+    padding-right: 3%;
+    margin-right: 21%;
+    margin-top: -20%;
+    font-size: 2.2em;
+    border: 4px solid #fff;
+    padding-left: 3%;
+    padding-top: 2%;
+    border-radius: 90%;
+    padding-bottom: 2%;
+    background: linear-gradient(to left, #EB3349 , #F45C43);
+    color: #fff;
+}
+
+#dashboard-popover-settings {
+    position: absolute;
+    top: 15% !important;
+    left: 0 !important;
+    right: 5%;
+    z-index: 10;
+    margin-top: 0;
+    margin-left: 2% !important;
+    margin-bottom: 4%;
+    /* background-color: #000; */
+    height: 33%;
+    width: 96%;
+    background-color: #fff;
+}
+
+#dashboard-popover-details {
+    position: absolute;
+    top: 3.5% !important;
+    left: 0 !important;
+    right: 5%;
+    z-index: 10;
+    margin-top: 0;
+    margin-left: 1% !important;
+    margin-bottom: 4%;
+    /* background-color: #000; */
+    height: 96%;
+    width: 98%;
+    background-color: #fff;
+}
+
+#dashboard-popover-settings,
+#dashboard-popover-backside {
+    transform: none !important;
+    transition: none !important;
+}
+
+#dashboard-popover-settings .popover-arrow,
+#popover-dashboard-select-create .popover-arrow,
+#popover-dashboard-select .popover-arrow, 
+#dashboard-popover-details .popover-arrow {
+    display:none !important;
+}
+
+#popover-dashboard-select-create,
+#popover-dashboard-select {
+    position: absolute;
+    top: -3%!important;
+    left: 0 !important;
+    right: 5%;
+    z-index: 10;
+    /* margin-top: 0; */
+    /* margin-left: 3% !important; */
+    /* margin-bottom: 4%; */
+    /* background-color: #000; */
+    height: 103%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#top-dashboard-select-item-create,
+#top-dashboard-select-item {
+    margin-top: 7% !important;
+}
+
+.popover-dashboard-select-list-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF !important;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: -.8%;
+    /* margin: -1px; */
+    border: 2px solid #fff !important;
+    font-size: 1.9em;
+    border-radius: 1em;
+    margin-top: 3%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    margin-left: 6%;
+    font-weight: 600;
+    margin-right: 1%;
+    width: 88%;
+    text-align: center;
+    /* font-family: 'Cabin', sans-serif; */
+    letter-spacing: 1px;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+a.item.popover-dashboard-select-list-item.activated {
+    background: linear-gradient(to left, #cb2d3e , #ef473a) !important;
+}
+
+#popover-disappear-create,
+#popover-disappear {
+    margin-top: 5% !important;
+    /* background: linear-gradient(to left, #cb2d3e , #ef473a); */
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-size: 2.9em;
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    height: 2em;
+}
+
+#popover-disappear-icon-create,
+#popover-disappear-icon {
+    margin-left: 1%;
+    border: 4px solid #fff;
+    padding-left: 3.2%;
+    padding-right: 3%;
+    padding-top: 1.2%;
+    border-radius: 76%;
+    background: linear-gradient(to left, #e52d27 , #b31217);
+    font-size: .6em;
+}
+
+.popover-select-display {
+    text-align: center;
+}
+
+.cardEventName-backside,
+.cardEventName {
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #595959;
+}
+
+#cardEventName-height {
+    height: 4em;
+}
+
+.cardEventName-backside {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-weight: 600;
+}
+
+.event-description-popover {
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #595959;
+    font-size: 1.4em;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+#dashboardEventNameHeight {
+    height: 5em;
+}
+
+#dashboardHeight {
+    height: 11.5em;
+}
+
+.dashboard-popover-backside-titles {
+    text-align: left;
+    padding-left: 2%;
+    color: #ff3b3f;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.dashboard-popover-subtitles {
+    text-align: left;
+    padding-left: 4%;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #595959;
+    margin-top: -1%;
+}
+
+.dashboard-backside-owner-info {
+    text-align: left;
+    padding-left: 2%;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #595959;
+    margin-top: 1%;
+}
+
+.dashboard-backside-owner-about {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.3em;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #595959;
+}
+
+.horizontal-row {
+    height: 2px;
+    width: 96%;
+    background-color: #000;
+}
+
+.dashboard-backside-return-icon {
+    font-size: 4.5em;
+    color: #a8e063;
+    text-shadow: 1px 9px 3px #e6e6e6;
+}
+
+.slider-pager {
+    margin-bottom: -5% !important;
+}
+
+#cardOwnerName {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 4%;
+    padding-right: 6%;
+    padding-left: 6%;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.top-chat-div,
+.top-notification-div,
+.top-select-div {
+    text-align: center;
+}
+
+.cardAge {
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.read-more-about-owner {
+    float: right;
+    padding-right: 3%;
+    font-size: 1.5em;
+    /* margin-bottom: 1%; */
+    color: #ff3b3f;
+}
+
+.event-description-pop{
+
+}
+.event-photo-pop {
+    width: 50%;
+    height: 50%;
+    border-radius: 10em;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+/***************************************************
+                Profile Page
+***************************************************/
+
+#profilePage {
+    background-color: #fefefe;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.age-label{
+    font-weight: bold;
+    color: #50C9C3;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+.about-label{
+    color: #595959;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.profileHeader{
+    background-color: rgba(255, 255, 255, .0);
+}
+
+.tab-nav{
+    border-top: 2px solid #F25F5C;
+}
+
+.messagesHeaderBtn1 {
+    background-color: #F25F5C;
+    color: #fff;
+    float: right;
+    height: 100%;
+    border-radius: 0;
+    font-size: 1.5em;
+}
+
+.content-card {
+    margin-top: -32%;
+    border-radius: 1em;
+    box-shadow: 0 6px 6px #b3b3b3;
+}
+
+.my-events {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 1.5em;
+    padding-left: 2%;
+    color: #fff;
+    color: #50C9C3;
+}
+.post-req-users {
+    color: #F25F5C;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 11%;
+}
+.post-label {
+    color: #F25F5C;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cancel-event-btn {
+    float: right;
+    color: #F25F5C;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    border: 2px solid;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 1em;
+}
+
+
+.profile-photo {
+    margin-top:  -22%;
+    border-radius: 50%; 
+    width: 12em;
+    height: 12em;
+    border: .4em solid #fff;
+}
+
+.michele {
+    text-align: center;
+}
+
+.user-name-tag{
+    text-align: center;
+    margin-top: 18%;
+    font-size: 1.8em;
+    color: #EB3349;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+.user-aboutMe-tag {
+    width: 80%;
+}
+
+.user-age-tag{
+    width: 80%;
+}
+.user-location-tag{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #808080;
+}
+
+.select-num-btn,
+.create-activity-btn,
+.save-btn {
+    background-color: #96D7E5;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+.logOff-btn {
+    background: linear-gradient(to left, #EB3349 , #F45C43);
+    border-radius: 2em;
+    float: right;
+    width: 40%;
+    color: #fff;
+    font-size: 1.3em;
+    padding-top: 1%;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px #ccc;
+    padding-bottom: 1%;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+/***************** Edit Profile Syling ***************************/
+.edit-profile-btn {
+    font-weight: bold;
+    float: right;
+    color: #EB3349;
+    font-size: 1.3em;
+    background: transparent;
+}
+.edit-profile-popover-card{
+    margin-top: 32%;
+    border-radius: 1em;
+    height: 31em;
+}
+
+.aboutMe-textarea,
+.age-textarea {
+    width: 100%;
+    resize: none;
+    border: 2px solid #50C9C3;
+    border-radius: 1em;
+}
+.aboutMe-textarea {
+    width: 100%;
+    padding: 0.5em;
+    height: 7em;
+}
+
+.age-textarea {
+    width: 20%;
+    padding-left: 1.7em;
+    height: 2em;
+}
+
+.edit-distance-label,
+.edit-label {
+    font-size: 1.4em;
+    color: #EB3349;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-left: 2%;
+    font-weight: 700;
+}
+
+.edit-distance-label {
+    padding-left: 4%;
+    font-size: 1.5em;
+}
+
+.save-profile-btn {
+    text-align: center;
+    background: linear-gradient(to left, #EB3349 , #F45C43);
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+
+
+/***************** Profile Accordian Syling ***************************/
+button.accordion {
+    background: linear-gradient(to bottom right, #50C9C3 , #96DEDA );
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    width: 96%;
+    padding-left: 5%;
+    border: 1px solid #fff;
+    text-align: left;
+    outline: none;
+    margin-left: 2%;
+    font-size: 1.3em;
+    transition: 0.6s;
+    border-radius: 1em;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: ;
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: ;
+    color: #fff;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #595959;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+/***************************************************
+                Create Event Page
+***************************************************/
+
+#createPage{
+    background-color: #EFEFEF;
+}
+#create-event-name, 
+#create-event-description {
+    resize: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin-top: 1%;
+    border-radius: 1em;
+    margin-left: 2%;
+    margin-right: 2%; 
+    height: 2.2em;
+    padding-left: 5%;
+}
+#create-event-name {
+    height: 2.2em;
+}
+#create-event-description {
+    height: 5em;
+}
+
+.pick-category-btn{
+    color: #96D7E5;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px #ccc;
+    background-color: #fff;
+    border: 2px solid #96D7E5;
+}
+
+.ppl-output {
+    color: rgb(255,59,63);
+    margin-left: 2%;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: -1px 2px 3px #ccc;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#ppl-output-icon {
+    font-size: 1em;
+}
+
+.create-label {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 1.6em;
+    /* text-align: center; */
+    font-weight: 500;
+    line-height: 1.1;
+    margin-left: 2%;
+    text-align: center;
+    color: #595959;
+    font-weight: 600;
+    font-family: 'Pragati Narrow', sans-serif;
+    padding-right: 1%;
+}
+
+.cust-icon {
+    font-size: 1.2em;
+    padding-left: 2%;
+}
+
+.create-card {
+    margin-top: 3%;
+    border-radius: 3%;
+    box-shadow: 0 6px 6px #b3b3b3;
+    transform: none !important;
+}
+
+.post-event-btn {
+    color: #fff;
+    width: 70%;
+    margin-left: 15%;
+    background: linear-gradient(to left, #EB3349 , #F45C43);
+    font-weight: bold;
+    border-radius: 1em !important;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+#post-event-label {
+    font-size: 1.3em;
+    margin-bottom: 1%;
+    letter-spacing: 1px;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #fff;
+}
+
+
+
+/***************************************************
+                Notification Html
+***************************************************/
+#dashboardHtml,
+#chat-groups-page,
+#profilePage,
+#createPage,
+#notificationsPage {
+    font-family: raleway;
+    background: #F4FBFB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right top, #eaeaea, #F4FBFB); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, #eaeaea, #F4FBFB); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, #eaeaea, #F4FBFB); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, #eaeaea, #F4FBFB); /* Standard syntax (must be last) */
+}
+
+#acceptCardIcon {
+    color: #4caf50;
+    font-size: 3em;
+    float: right;
+    margin-right: 7%;
+    margin-bottom: -12%;
+    margin-top: 12%;
+    margin-left: -12%;
+}
+
+#declineCardIcon {
+    color: #ff3b3f;
+    font-size: 3em;
+    float: left;
+    margin-left: 7%;
+    margin-bottom: -12%;
+    margin-top: 12%;
+    margin-right: -12%;
+}
+
+.notifications-div {
+    text-align: center;
+}
+
+
+#profile-photo {
+    height: 25%;
+    width: 25%;
+    margin-top: 3%;
+    border-radius: 76%;
+}
+
+.notifs-pop-card {
+    border-radius: 10%;
+}
+
+.notifs-pop-photo {
+    margin-left: 10%;
+    border-radius: 90%;
+    margin-top: 1em;
+    height: 80%;
+    width: 80%;
+}
+
+.notifs-pop-about{
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Pragati Narrow', sans-serif;
+    text-align: center;
+    color: #595959;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.notifs-pop-age {
+    color: #fff;
+    background: linear-gradient(to left, #EB3349 , #F45C43);
+    border: 0.2em solid #fff;
+    width: 3em;
+    height: 3em;
+    padding-top: .6em;
+    padding-left: .7em;
+    border-radius: 100%;
+    margin-left: 70%;
+    margin-top: -21%;
+    position: relative;
+}
+
+.notifs-pop-age p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.notifs-pop-name{
+    color: #EB3349;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Pragati Narrow', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+    
+}
+
+.notificationCard {
+    box-shadow: 0 6px 6px #b3b3b3;
+    margin-bottom: 0;
+    margin-top: 3%;
+    transform: none !important;
+    transition: none !important;
+    border-radius: 2%;
+}
+
+.notifications-list {
+    margin-top: 6%;
+}
+
+#notificationsTitle {
+    color: #595959;
+    margin-top: -4%;
+    margin-bottom: -5%;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.notificationCard p {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Pragati Narrow', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #595959;
+    font-weight: 600;
+}
+
+.notificationCard-userName {
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+#notificationsPopover {
+    position: absolute;
+    top: 15% !important;
+    left: 0 !important;
+    right: 5%;
+    z-index: 10;
+    margin-top: 0;
+    margin-left: 3% !important;
+    margin-bottom: 4%;
+    /* background-color: #000; */
+    height: 70%;
+    width: 94%;
+    background-color: #fff;
+}
+
+#notificationsPopover .popover-arrow {
+    display:none !important;
+}
+
+.popover-backdrop.active {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.notifications-userCard {
+    transform: none !important;
+    transition: none !important;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+.notifications-userCard-img {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: auto;
+}
+
+#notifications-userCardP1 {
+    padding-top: 2%;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#notifications-userCardAge {
+    font-weight: bold;
+}
+
+#notificationsUser-InfoCard,
+#notificationsUser-InfoCard2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+/***************************************************
+        Chat Groups HTML
+***************************************************/
+
+.new-message {
+    color: #F45C43;
+}
+#myGroupsTitle {
+    color: #EB3349;
+    text-align: center;
+}
+
+
+.groups-card {
+    border-radius: 1em;
+    margin-top: -10%;
+    
+}
+.chatGroups{
+    border-radius: 1em;
+}
+
+/***************************************************
+        Chat Feed HTML
+***************************************************/
+.single-message {
+    border-radius: 3em;
+    margin-bottom: 5%;
+    display: inline-block;
+    width: 100%;
+}
+.item-input-inset{
+    width: 100%;
+}
+.send-msg-btn{
+    background: linear-gradient(to bottom right, #57d857 , #a2e9a2 );
+    color: #fff;
+    font-style: bold;
+    border-radius: 2em;
+    font-size: 1.4em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    margin-top: 5%;
+}
+
+.message-bottom {
+    height: 3em;
+    background-color: transparent;
+}
+.p-message{
+    background: linear-gradient(to bottom right, #d9d9d9 , #efefef);
+    border-radius: 2em;
+    margin-left: -4%;
+    margin-top: 8%;
+    float: left;
+    padding: 2%;
+    border: .2em solid #fff;
+    max-width: 60%;
+    text-align: justify;
+}
+.myMessage {
+    background: linear-gradient(to bottom right, #50C9C3 , #96DEDA );
+    color: #fff;
+    float: right;
+    margin-right: -4%;
+    margin-top: 6%;
+}
+.p-sentBy {
+    float: left;
+    margin-top: -7%;
+    padding-left: 2%;
+    color: #595959;
+}
+.myName{
+    float: right;
+    padding-left: 0;
+    padding-right: 2%;
+}
+.profile-photo-message {
+    border: .1em solid #fff;
+    margin-left: 2%;
+    border-radius: 50%;
+    float: left;
+    height: 3.5em;
+    width: 3.5em;
+}
+.myPhoto {
+    float: right;
+    margin-right: 2%;
+}
+.message-textbox { 
+  width: 100%;
+  resize: both;
+  overflow: auto;
+}
+.chat-room-title {
+    margin-top: 75px;
+}
+.message-top-spacer {
+    height: 5.5em;
+    background-color: transparent;
+}
+.roomTitle{
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 7%;
+    text-align: center;
+    width: 100%;
+}
+.close-chat-btn {
+    color: #fff;
+    padding-top: 2%;
+    margin-right: 2%;
+    font-size: 1em;
+
+}

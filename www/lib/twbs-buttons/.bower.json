@@ -1,0 +1,40 @@
+{
+  "name": "twbs-buttons",
+  "homepage": "https://github.com/mvaldetaro/twbs-buttons",
+  "authors": [
+    "Magno Valdetaro <mvaldetaro@gmail.com>"
+  ],
+  "description": "The Bootstrap Buttons Web Component",
+  "main": "src/twbs-buttons.html",
+  "keywords": [
+    "custom-elements",
+    "web-components",
+    "buttons",
+    "polymer",
+    "twitter bootstrap",
+    "bootstrap",
+    "twbs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.2.4",
+    "polymer": "Polymer/polymer#~0.2.4"
+  },
+  "_release": "30d30e929f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "30d30e929f074b9734c7a17d220c13bed57c378c"
+  },
+  "_source": "https://github.com/mvaldetaro/twbs-buttons.git",
+  "_target": "*",
+  "_originalSource": "add",
+  "_direct": true
+}

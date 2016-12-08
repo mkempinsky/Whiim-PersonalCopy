@@ -1,0 +1,47 @@
+<ion-view hide-nav-bar="true" id="dashboardHtml">
+    <ion-content scroll="false" class="manual-ios-statusbar-padding">
+        <!-- <div class="defaultHeader">
+            <p class="defaultHeader-pTag"><label class="deafultHeaderTitle">WHiiM</label>
+            <i class="messagesHeaderBtn ion-ios-chatboxes"></i></p>
+        </div> -->
+        <div class="heading-backsplash-custom">
+           <div class="profileHeader">
+               <p class="defaultHeader-pTag"><i id="popover-settings-icon" class="ion-earth" ng-click="popover3.show($event)"></i><label class="defaultHeaderTitle-dash">WHiiM</label>
+               </p>
+           </div>
+        </div>
+
+        <div class="top-select-div">   
+          <i id="anchorIconSelector" class="fa fa-anchor" ng-click="popover.show($event)"></i>
+          <label class="activityFeedList">{{dashboard.category}}</label>
+        </div>
+        
+        <div>
+          <td-cards>
+            <td-card class="swipeCard list card" ng-repeat="card in dashboard.currentCard" on-destroy="dashboard.cardDestroyed(card)" on-swipe-right="dashboard.cardSwiped(card)">
+              <img ng-src="{{card.photoURL}}" class="swipeCard-img">   
+              <i id="seeUserDesc" class="icon ion-clipboard" ng-click="popover2.show($event); setOwnerId(card)"></i>
+              <!-- <td-card id="activityListCard2" class="list card"> -->
+                <div id="cardEventName-height">
+                    <p class="cardEventName">"{{card.name}}"</p>
+                </div>
+                <p id="cardOwnerName">{{card.ownerName}}, <label class="cardAge">{{card.age}}</label></p>
+                
+         <!--      </td-card> -->
+                
+
+                <div id="activityListCard-People">
+                <p >{{card.requiredUsers}}<i id="activityListCard-PeopleIcon" class="icon ion-person-stalker"></i></p>
+                </div>
+            </td-card>
+          </td-cards>
+          <div class="loading-spinner">
+            <ion-spinner icon="ripple"></ion-spinner>
+          </div>
+        </div>    
+
+    </ion-content>
+</ion-view>
+
+
+

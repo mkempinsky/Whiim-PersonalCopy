@@ -1,0 +1,22 @@
+<ion-popover-view id="dashboard-popover-settings">
+    <ion-content>
+            <div id="dashboard-popover-settings">
+                    <label class="edit-distance-label">Maximum Distance:</label>
+                    <div class="row">
+                        <div class="row range">
+                            <i class="icon ion-location"></i>
+                            <input type="range" value="0" min="0" max="50" step="1" ng-model="radius" />
+                            <i class="icon ion-map"></i>
+                        </div>
+                    </div>
+                    <div class="ppl-output">
+                        <p id="ppl-output-name">{{radius}} mile(s)<i id="" class=""></i></p>
+                    </div>
+                    <div style="text-align: center"> 
+                    <button type="submit" ng-click="saveRadius(radius); popover3.hide()" class="button button-small send-msg-btn">
+                    Submit Radius
+                    </button>
+                    </div>
+            </div>
+    </ion-content>
+</ion-popover-view>

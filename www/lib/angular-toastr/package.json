@@ -1,0 +1,67 @@
+{
+  "name": "angular-toastr",
+  "version": "2.1.1",
+  "author": {
+    "name": "Jesus Rodriguez",
+    "email": "Foxandxss@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxandxss/angular-toastr.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "angularjs",
+    "toastr",
+    "popup"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "del": "^2.0.2",
+    "gulp": "^3.8.10",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "jquery": "^2.1.4",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.0.0"
+  },
+  "gitHead": "c03374ce968196dd75dd614a4c3849ac9acc1b81",
+  "description": "[![Code Climate](https://codeclimate.com/github/Foxandxss/angular-toastr.png)](https://codeclimate.com/github/Foxandxss/angular-toastr) [![Build Status](https://travis-ci.org/Foxandxss/angular-toastr.svg?branch=master)](https://travis-ci.org/Foxandxss/ang",
+  "bugs": {
+    "url": "https://github.com/Foxandxss/angular-toastr/issues"
+  },
+  "homepage": "https://github.com/Foxandxss/angular-toastr#readme",
+  "_id": "angular-toastr@2.1.1",
+  "scripts": {},
+  "_shasum": "9f8350ca482145a44d011a755b8fb3623d60544c",
+  "_from": "angular-toastr@latest",
+  "_npmVersion": "3.10.2",
+  "_nodeVersion": "5.11.1",
+  "_npmUser": {
+    "name": "foxandxss",
+    "email": "Foxandxss@gmail.com"
+  },
+  "dist": {
+    "shasum": "9f8350ca482145a44d011a755b8fb3623d60544c",
+    "tarball": "https://registry.npmjs.org/angular-toastr/-/angular-toastr-2.1.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "foxandxss",
+      "email": "Foxandxss@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-toastr-2.1.1.tgz_1471818431781_0.5886981142684817"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-toastr/-/angular-toastr-2.1.1.tgz"
+}

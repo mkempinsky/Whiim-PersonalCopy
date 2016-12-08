@@ -1,0 +1,36 @@
+<ion-popover-view id="dashboard-popover-details">
+    <ion-content>
+        <td-cards>
+        	<td-card id="dashboard-popover-backside">
+        		<div id="dashboardEventNameHeight">
+        		<p class="cardEventName-backside">{{requestor.name}}</p>
+        		</div>
+        		<div id="dashboardHeight">
+        			<p class="dashboard-popover-backside-titles">Description: </p>
+        			<p class="event-description-popover">{{requestor.description}}</p>
+        			<p class="dashboard-popover-subtitles">Location:</p>
+	          	</div>
+	          	<p class="dashboard-popover-backside-titles">How many people can join?: </p>
+	          	<p class="event-description-popover">{{requestor.requiredUsers}}</p>
+	        	<hr class="horizontal-row">
+	        	<ion-slide-box on-slide-changed="slideHasChanged($index)">	
+	        		<ion-slide>
+	        			<div class="center-img-details">	
+	        			<img class="swipeCard-img-details" ng-src="{{requestor.photoURL}}"></img>
+	        			</div>
+	        		</ion-slide>
+	        		<ion-slide>
+	        			<div class="center-img-details">
+<!-- Will Change-->    	<img class="swipeCard-img-details" ng-src="{{requestor.photoURL}}">							</img>
+						</div>
+	        		</ion-slide>
+	        	</ion-slide-box>
+	        	<p class="dashboard-backside-owner-info">{{requestor.ownerName}}, <label class="cardAge">{{requestor.age}}</label><i class="read-more-about-owner ion-chevron-down"></i></p>
+	        	<p class="dashboard-backside-owner-about">{{requestor.aboutOwner}}</p>
+				<div style="text-align: center">
+	        		<p><i class="dashboard-backside-return-icon ion-reply" ng-click="popover2.hide()"></i></p>
+	        	</div>
+	        </td-card>
+        </td-cards>
+    </ion-content>
+</ion-popover-view>

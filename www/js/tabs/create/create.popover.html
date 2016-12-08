@@ -1,0 +1,31 @@
+<ion-popover-view id="popover-dashboard-select-create">
+    <ion-content>
+        <div>
+            <a id="top-dashboard-select-item-create" ng-hide="expression" class="item popover-dashboard-select-list-item" ng-click="setCategory('Anything Goes!')"> Anything goes! <i class="icon fa fa-rocket"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Sports & Fitness')">
+            Sports and Fitness <i class="icon ion-ios-basketball"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Night Life')">
+              Night Life <i class="icon ion-beer"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Food')">
+              Food <i class="icon ion-android-restaurant"> </i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Adventure')">
+              Adventure <i class="icon ion-map"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Gaming')">
+              Gaming <i class="icon ion-ios-game-controller-b"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Arts')">
+              Arts <i class="icon ion-android-color-palette"></i>
+            </a>
+            <a class="item popover-dashboard-select-list-item" ng-click="setCategory('Entertainment')">
+              Entertainment <i class="icon ion-mic-c"></i>
+            </a>
+            <p id="popover-disappear-create" class="item popover-dashboard-select-list-item">{{newEvent.category}}<i id="popover-disappear-icon-create" class="icon ion-checkmark-round" ng-click="popover.hide();"></i>
+            </p>
+        </div>
+    </ion-content>
+</ion-popover-view>

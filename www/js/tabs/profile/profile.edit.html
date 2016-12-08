@@ -1,0 +1,27 @@
+<ion-poppover-view title="Profile Edit" id="">
+    <ion-content class="manual-ios-statusbar-padding">
+        <div class="edit-profile-popover-card card" on-drag-down="popover.hide()">
+            <form>
+                <div class="list list-inset">
+                    <label class="edit-label">About Me: </label>
+                    <textarea class="aboutMe-textarea" type="text" placeholder="{{profileCtrl.user.aboutMe}}" maxlength="200" ng-model="profileCtrl.user.aboutMe"></textarea>
+                </div>
+                <div class="list list-inset">
+                    <label class="edit-label">Age: </label>
+                    <textarea class="age-textarea" type="number" placeholder="{{profileCtrl.user.age}}" maxlength="3" ng-model="profileCtrl.user.age"></textarea>
+                </div>
+                <div class="row">
+                    <div class="row range">
+                        <i class="icon ion-ios-person"></i>
+                        <input type="range" value="0" min="1" max="30" step="1" ng-model="profileCtrl.user.radius"/>
+                        <i class="icon ion-ios-people"></i>
+                    </div>
+                </div>
+                <div class="ppl-output">
+                		<p id="ppl-output-name">{{profileCtrl.user.radius}}<i id="" class=""></i></p>
+            	</div>
+                <button class="button save-profile-btn" ng-click="profileCtrl.save() ; popover.hide()">Save Profile</button>
+            </form>
+        </div>
+    </ion-content>
+</ion-poppover-view>

@@ -1,0 +1,94 @@
+<ion-view title="Profile Page" hide-nav-bar="true" id="profilePage">
+    <ion-content class="manual-ios-statusbar-padding">
+    <div class="heading-backsplash-profile">
+        <div class="profileHeader">
+            <p class="defaultHeader-pTag"><label class="defaultHeaderTitle">WHiiM</label>
+            </p>
+        </div>
+    </div>
+    <div class="michele" ng-click="profileCtrl.editingPhoto = true">
+        <img ng-hide="profileCtrl.editingPhoto" class="profile-photo" ng-src="{{profileCtrl.user.photoURL}}"/>
+        <div ng-show="profileCtrl.editingPhoto">
+            <input filepicker type="filepicker" data-fp-services="computer,facebook,dropbox,box" on-success="onSuccess(event.fpfile)" />
+        </div>
+    </div>
+    
+    <div class="card content-card">
+       <!--  <div class="col">
+            <button class=" edit-profile-btn" ng-click="poppover.show()"><i class=" ion-edit"></i></button>
+        </div> -->
+            <div class="row">
+                <div class="col">
+                    <button class="button edit-profile-btn" ng-click="popover.show()">Edit <i class="ion-edit"></i></button>
+                <div class="row">
+                    <div class="col">
+                        <p class="user-name-tag">{{profileCtrl.user.displayName}}</p>
+                        <p class="age-label">{{profileCtrl.user.age}}</p>
+                        
+                    <!-- about me information goes here -->
+                        <p class="about-label">{{profileCtrl.user.aboutMe}}</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- EVENTS USER CREATED REPEATS HERE -->
+           <div ng-repeat="post in profileCtrl.eventsArrayUsers">
+                <button class="accordion" ng-class="{'active': post.open}" ng-click="profileCtrl.toggleAccordion(post)">{{post.name}}</button>
+                <div class="panel" ng-class="{'show': post.open}">
+                    <div class="row">
+                        <p class="col-80"><span class="post-label">Category:</span> {{post.category}}</p>
+                        <p class="col-20 post-req-users">{{post.requiredUsers}} <i id="activityListCard-PeopleIcon" class="icon ion-person-stalker"></i></p>
+                        </div>
+                    <div class="row">
+                        <div class="col-80">
+                            <p class="post-details"><span class="post-label">Details:</span> {{post.description}}</p>
+                        </div>
+                    </div>
+                        <a class="cancel-event-btn" ng-click="profileCtrl.deleteEvent($index, post.eventKey);">Cancel Event</a>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="row">
+              <!--   <div class="col">
+                    <button class="button button-block ion-gear-a save-btn" ng-click="profile.save()"> Save</button>
+                </div> -->
+                <div class="col col">
+                    <button class="button button-small ion-log-out logOff-btn" ng-click="profileCtrl.logOff()"> Sign Out</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        
+    
+        
+        <!-- <h1 class="my-events">My Events</h1> -->
+           <!--  <ion-item ng-repeat="post in profileCtrl.eventsArrayUsers">
+                <div class="events-card">
+                    <div class="post-name">
+                        <p>{{post.name}}</p>
+                    </div>
+                    <p class="post-details">Details: {{post.description}}</p>
+                    <p class="post-req-users">{{post.requiredUsers}} <i id="activityListCard-PeopleIcon" class="icon ion-person-stalker"></i></p>
+                    <a class="cancel-event-btn" ng-click="profileCtrl.deleteEvent($index , post.eventKey); profileCtrl.deleteEvent2(post.eventKey)">cancel event</a>
+                </div>
+            </ion-item>   
+         -->
+    
+
+
+       <!--  <div class="about-me-div text-box row">
+            <div class="col">
+                <label class="item item-input" id="profilePage-textarea">
+                    <span class="input-label">About:
+                     <input class="item" type="text" ng-model="profile.user.aboutMe" placeholder=""></input></span>
+                </label>
+            </div>
+        </div> -->
+            
+    </ion-content>
+</ion-view>

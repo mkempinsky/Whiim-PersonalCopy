@@ -1,0 +1,38 @@
+<!-- 
+<ion-content id="defaultLoginColor">
+    <div class="spacer" style="width: 300px; height: 0.222222px;"></div>
+    <form id="defaultLoginPage-form1" class="list">
+        <div>
+            <img src="img/whiim trans.png" id="defaultLoginImg">
+        </div> -->
+        <!-- WILL IMPLEMENT THIS FEATURE ONCE A PROTOTYPE IS CREATED -->
+        <!-- <button ui-sref="loginState" id="defaultLoginPage-button1" style="color:#FFFFFF;" class="button button-assertive  button-block icon-right ion-ios-home">Log in</button> -->
+        <!-- old button - <a ui-sref="loginState" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="defaultLoginPage-button2" class="button button-positive  button-block icon-right ion-social-facebook">Login With Facebook</a> -->
+ <!--        <p class="defaultLoginPageBtn" ng-click="login.webTesterLogIn()">Login<i class="loginIcon ion-ios-home"></i></p>
+        <p class="facebook-login-btn" ng-click="login.facebookLogIn()">Login With Facebook<i class="loginIcon ion-social-facebook"></i></p>
+        
+    </form>
+</ion-content> -->
+
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+    <div class="box firstSlide" id="defaultLoginColor">
+    <div class="spacer" style="width: 300px; height: 0.222222px;"></div>
+        <form id="defaultLoginPage-form1" class="list">
+            <div>
+                <img src="img/whiim trans.png" id="defaultLoginImg">
+            </div>
+            <p class="defaultLoginPageBtn" ng-click="login.webTesterLogIn()">Login<i class="loginIcon ion-ios-home"></i></p>
+            <p class="facebook-login-btn" ng-click="login.facebookLogIn()">Login With Facebook<i class="loginIcon ion-social-facebook"></i></p>
+            
+        </form>
+    </div>
+  </ion-slide>
+
+  <ion-slide>
+    <div class="box yellow"><h1></h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box pink"><h1></h1></div>
+  </ion-slide>
+</ion-slide-box>

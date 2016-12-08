@@ -1,0 +1,15 @@
+<ion-popover-view id="notificationsPopover">
+    <ion-content class="notifs-pop-card">
+      <td-cards class="notif-pop-card" on-drag-down="popover.hide()">
+        <div class="notifs-pop-photo">
+        	<img ng-src="{{requestor.photoURL}}" class="notifs-pop-photo">
+           	<div class="notifs-pop-age">
+          		<p id="notifs-pop-age">{{requestor.age}}</p>
+          	</div>
+        </div>
+            <p class="notifs-pop-name">{{requestor.displayName}}</p>
+           
+            <p class="notifs-pop-about">{{requestor.aboutMe}}</p>
+      </td-cards>
+    </ion-content>
+</ion-popover-view>
