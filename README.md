@@ -1,4 +1,12 @@
 # Whiim-PersonalCopy
+Whiim is a mobile based activity finder. Created by three code students with the goal of bringing people of similar interests together. Whiim allows users to either create events or join other users events. The app uses the 'swiping' effect to allow users to show their interest in an event or continue to search for fun activities. Once a user 'likes' and event, a notification will be sent to the creator of the even and upon approval, the two users will be allowed to join a live chat to discuss their plans for the event. Whiim allows creators of an event to specify how many other users they would like to join them and also allows both users to set a search radius for events they would like to join.
+
+The goal of Whiim is to bring people together!
+
+Features:
+- Facebook Login & Authentication 
+- Live Chat
+- Geolocation
 
 Tech Used: 
 - Html
